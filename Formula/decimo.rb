@@ -25,6 +25,9 @@ class Decimo < Formula
     bin.install "bin/decimo"
     lib.install Dir["lib/*"]
     pkgshare.install "README.md", "LICENSE", "NOTICE"
+    # Bundle the third-party license texts so users can inspect them
+    # via `brew info decimo` / the cellar.
+    pkgshare.install "THIRD_PARTY_LICENSES" if Dir.exist?("THIRD_PARTY_LICENSES")
   end
 
   test do
