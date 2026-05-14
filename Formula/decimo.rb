@@ -2,18 +2,19 @@ class Decimo < Formula
   desc "Arbitrary-precision calculator"
   homepage "https://github.com/forfudan/decimo"
   license "Apache-2.0"
+  version "0.10.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/forfudan/decimo/releases/download/cli-v0.10.0-alpha.1/decimo-0.10.0-alpha.1-darwin-arm64.tar.gz"
-      sha256 "1139072b23cbbd29445f4005663e6fddf9d1ae13a075f9883da6aae96c80fbf9"
+      url "https://github.com/forfudan/decimo/releases/download/v0.10.0/decimo-0.10.0-darwin-arm64.tar.gz"
+      sha256 "16fe7ca78c966800e5578596a135733bb7eb55b6b3c68c28fc118d97f6e7f4de"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/forfudan/decimo/releases/download/cli-v0.10.0-alpha.1/decimo-0.10.0-alpha.1-linux-x86_64.tar.gz"
-      sha256 "2c52538f88aedfb5aaee31e2d87c05a443a9457e6fe9b539539bd1821c41929c"
+      url "https://github.com/forfudan/decimo/releases/download/v0.10.0/decimo-0.10.0-linux-x86_64.tar.gz"
+      sha256 "0277d436985a36d647d86df750e5f3a95fca4164ee8a1af374b17a6fbf2987f1"
     end
   end
 
